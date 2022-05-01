@@ -1,0 +1,195 @@
+.body {margin: 0;}
+.header { 
+    position:relative;
+    top:0; left:0; right:0;
+    background: #ffe6dd;
+    padding: 1rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .logo img { 
+      height: 4rem;
+   } 
+   .header .search-form {
+  height: 5rem;
+  width: 40rem;
+  border-radius: .5rem;
+  background: #ffe6dd;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+   }
+  .header .search-form input {
+  width: 100%; background: none;
+  font-size: 1.5rem; 
+  color:crimson;
+  text-transform: none;
+   }
+   header .navbar a{
+    font-size: x-large;
+    padding: 1rem;
+    color: black;
+   
+}
+  .navbar a:hover { 
+  color: crimson; 
+  letter-spacing: .2rem; 
+   } 
+   .header .icons a,
+   .header .icons div {
+     font-size: 1.5rem;
+     padding: 0 1rem;
+     color: #222;
+     margin-left: .3rem;
+     border-radius: .5rem;
+
+   }
+  .header .icons a:hover,
+  .header .icons div:hover {
+  background: crimson;
+   color: #fff;
+   } 
+   h2 {
+    text-align:center;
+    font-size:xx-large;
+    color: black;
+    padding: 2rem;
+    margin:2rem;
+    background:rgb(216, 88, 114) ;
+}
+p{
+    font-size: x-large;
+    padding:1rem;
+    line-height:normal;
+    background-color: #ffe6dd;
+}
+.about .content .vid-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+.about .content .vid-container video{
+    width:100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .content .vid-container h4{
+    position: absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background:#fff;
+    width:100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+.service {
+    background: whitesmoke;
+    flex-direction:row;
+    gap: 1rem;
+  }
+  
+  .service .box3 {
+    border: 0.2rem 0.2rem solid #222;
+    padding: 1rem 1rem solid;
+    text-align: center;
+    background: #fff;
+    flex-direction:row;
+  
+  }
+  
+  .service .box3:hover {
+    background: gray;
+  }
+  
+  .service .box3:hover h3 {
+    color: crimson;
+  }
+  
+  .service .box3:hover p {
+    color: crimson;
+  }
+  
+  .service .box3 img {
+    height: 8rem;
+    margin-bottom: .3rem;
+  }
+  
+  .service .box3 h3 {
+    padding: .5rem .5rem;
+    font-size: 2rem;
+    color: #222;
+  }
+  .service .box3 p {
+     border: 0.2rem 0.2rem solid #222;
+     font-size: 1rem;
+     color: #777;
+     line-height: 2;
+     text-align:center;
+     font-size:x-large;
+     color: black;
+     padding: 1rem;
+     margin:1rem;
+    background:#ffe6dd ;
+  }
+
+
+  h3 {
+    text-align:center;
+    font-size:large;
+    color: black;
+    padding: 1rem;
+    margin:2rem;
+    background:#ffe6dd ;
+  }
+  .footer .box-container3 {
+      display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+   }
+  .footer .box-container3 .box4 {
+     flex: 1 1 10rem;
+     }
+   .footer .box-container3 .box4 a{
+      display: block;
+      color: black;
+       font-size: 1.5rem;
+   }
+   .footer .box-container3 .box4 a:hover {
+     color: #ffe6dd;
+   }
+  .footer .box-container3 .box4 img {
+    margin-top: 1rem;
+   }
+   .footer .credit {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #222;
+    border-top: 0.1rem solid crimson;
+    }
+  
+  .footer .box-container3 .contact .share { 
+   margin-top: 2rem;
+   } 
+  .footer .box-container3 .contact .share a {
+    height: 5rem; 
+    width: 5rem;
+    background: #fff;
+    border: 0.2rem solid #222;
+    font-size: 2rem; 
+    line-height: 4.5rem; 
+    color: #222; text-align: center;
+    margin-right: 4rem; 
+    }
+   .footer .box-container3 .contact .share a:hover {
+    background: crimson; 
+    color: #fff;
+   }
