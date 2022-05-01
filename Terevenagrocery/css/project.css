@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+:root {
+    --main-transition:0.3s;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 16px;
+
+}
+
+
+body{
+    font-family: "Anek Tamil", sans-serif;
+}
+a {
+    text-decoration: none;
+
+}
+/*header*/
+.header1 {
+    background-color: crimson;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 2rem 9%;
+    width: 100%;
+
+}
+.logo {
+    color: white  ;
+    font-size: 2.5rem;
+    font-weight: 500 ;
+    height: 72px;
+    justify-content: center;
+    display:flex ;
+    align-items: center;
+
+
+}
+
+
+.logo i {
+    padding-right: 10px;
+    color: white;
+}
+.header2 .main-nav {
+    display: flex;
+    
+ }
+.header2 .main-nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: relative;
+    padding: .2rem 50%;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    overflow: hidden;
+    color:crimson;
+    transition: var(--main-transition);
+    font-weight: 550;
+    
+}
+
+.header2 {
+    display: flex;
+    align-items: center ;
+    justify-content: space-between ;
+    background-color: white;
+    position: relative;
+    -webkit-box-shadow:0 0 10px rgb(151, 16, 43);
+    -moz-box-shadow: 0 0 10px rgb(151, 16, 43);
+    box-shadow:0 0 10px rgb(151, 16, 43);
+    padding: .3rem 5%;
+    
+
+}
+.header2 .main-nav > a::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color:crimson;
+    top:0;
+    left: -100%;
+    transition: var(--main-transition);
+}
+.header2 .main-nav > a:hover{
+    color: white;
+    padding: .2rem 50%;
+    background-color:crimson ;
+
+    
+}
+.header2 .main-nav > a:hover::before {
+    left: 0;
+}
+#searchBox {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    height: 70%;
+    border-radius: 55px;
+    background: white ;
+    box-shadow: 6px 6px 10px -1px rgb(151, 16, 43);
+}
+#searchBox label {
+    cursor: pointer;
+}
+input {
+    font-size: 16px;
+    border: 0;
+    outline: none;
+}
+.icons a {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+.icons a:hover {
+    color: crimson;
+}
+/*home*/
+.home {
+    background-color: white;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+.home .image {
+    display: flex;
+    flex: 1 1 20rem;
+    
+}
+.home .image img {
+    height: 80%;
+    width: 70%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 8rem;
+    box-sizing: border-box;
+}
+.home .content {
+    flex: 1 1 7rem;
+    padding-left: 0rem;
+    font-size: 2rem;
+    color: black;
+}
+.home .content span {
+    font-size: 1.5rem;
+    justify-items: center;
+}
+.shop {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    font-size: 2.5rem;
+}
+/*category*/
+.category .boxcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+
+}
+.immg {
+    height: 183px ;
+    width: 275px;
+}
+.category .boxcontainer .box {
+    text-align: center;
+    border: .15rem solid crimson;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgb(151, 9, 37);
+    flex: 1 1 20rem;
+    
+}
+.category .boxcontainer .box:hover{
+    overflow: hidden;
+    transform: scale(1.1);
+}
+.category .boxcontainer .box p{
+    font-weight: 500;
+}
+.category .boxcontainer .box span {
+    color: crimson;
+    font-weight: 600;
+}
+.shop span{
+    color: crimson;
+    text-transform: uppercase;
+}
+/*products*/
+.products .boxcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+}
+.products .boxcontainer .box {
+    text-align: center;
+    flex: 1 1 15rem;
+    padding: 2rem;
+    border: .15rem solid crimson;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px rgb(151, 9, 37);
+    position: relative;
+    overflow: hidden;
+}
+.products .boxcontainer .box .discount{
+    position: absolute;
+    background-color: rgb(151, 9, 37);
+    color:white;
+    padding: .7rem 2rem;
+    font-size: 1rem;
+}
+.products .boxcontainer .box h3 {
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: black;
+}
+.products .boxcontainer .box .stars{
+    padding: .2rem;
+    color: gold;
+}
+.products .boxcontainer .box .price{
+    padding: 1rem;
+    color: orangered;
+    font-size: 1.2rem;
+}
+.products .boxcontainer .box .quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem;
+    margin-bottom: .7rem;
+}
+.products .boxcontainer .box .quantity span{
+    padding: .5rem;
+    color: black;
+    font-size: 1.2rem;
+}
+.products .boxcontainer .box .quantity input{
+    border: .1rem solid black;
+    border-radius: 5px;
+    align-items: center;
+    padding-left: .5rem;
+    padding-top:.1rem ;
+    padding-bottom: .1rem;
+    font-weight: 500;
+    background-color: rgb(245, 240, 240);
+    font-size: 1rem;
+}
+.products .boxcontainer .box .add {
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-radius: .4rem;
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    
+
+}
+.products .boxcontainer .box:hover{
+    transform: scale(1.05);
+}
+
+.products .boxcontainer .box .add:hover{
+    background-color: black;
+}
+.pic {
+    height: 194px;
+    width: 259px;
+}
+/*button*/
+.btn {
+    background-color: crimson;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 4rem ;
+    margin-left:35rem ;
+    display: inline-block;
+    text-align: center;
+    
+    cursor: pointer;
+    padding: 1rem 4rem;
+    border-radius: .6rem;
+}
+.btn:hover{
+    background: black;
+
+}
+/*footer*/
+.footer .box-container {
+    background-color: crimson;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap:wrap;
+}
+.footer .box-container .box{
+    
+    flex: 1 1 25rem;
+    margin-bottom:2rem ;
+    margin-top: 1rem;
+}
+.footer p{
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-items: center;
+    margin-left: 15rem;
+    margin-top: 1rem;
+    margin-bottom:2rem;
+}
+
+.footer .bt{
+    color: white;
+    background-color: rgb(22, 22, 119);
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 2rem ;
+    
+    margin-left: 15rem;
+    display: inline;
+    text-align: center;
+    cursor: pointer;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    border-radius: .6rem;
+
+}
+.footer .bto{
+    color: white;
+    background-color: rgb(245, 10, 10);
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 2rem ;
+    margin-left: 2rem;
+    display: inline;
+    text-align: center;
+    cursor: pointer;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: .6rem;
+
+}
+.footer .box h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding-right: 5rem;
+    padding-bottom: .5rem;
+    color: white;
+    display: flex;
+}
+.footer .box .links a{
+    color: white;
+    display: block;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    padding-bottom: .7rem;
+}
+.footer .credit{
+    font-size: 1.6rem;
+    padding-left: 27rem;
+}
+
+.cart {
+    position: absolute;
+    min-height: 10rem;
+    background: white;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: bisque;
+    width: 0;
+    overflow: hidden;
+}
+.show-cart {
+    width: 18rem;
+    padding: 2rem 1.5rem;
+    transform: rotateY(-360deg);
+}
+.cart-item {
+    transition: all 2s ease-in-out;
+}
+.cart-item-remove {
+    color: crimson;
+    transition: all 2s ease-in-out;
+
+}
+.cart-item-remove:hover {
+    transform: scale(1.1);
+    color: black;
+}

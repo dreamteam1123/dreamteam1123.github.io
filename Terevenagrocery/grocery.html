@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/project.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;300;400&family=Cairo:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;1,400&family=Work+Sans:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Grocery store</title>
+</head>
+<body>
+    <!--header section starts-->
+    <div id="header1" class="header1">
+            <div><a href="#" class="logo"><i class="fas fa-shopping-basket"></i>  Grocery</a>
+            </div>
+            <div id="searchBox">
+                    <input type="text" placeholder="Search">
+                    <label for="searchBox" class="fas fa-search"></label>
+                </div>
+    </div>
+    
+    <div id="header2" class="header2">
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#category">Category</a>
+            <a href="#products">Products</a>
+            <a href="shop.html">shop</a>
+        </nav>
+        <div id="icons" class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user-circle"></a>
+        </div>
+    </div>
+    
+    <!--header section ends-->
+    <!--home section starts-->
+    <section class="home" id="home">
+        <div class="image">
+            <img src="images/fruit.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Fresh and organic</h3>
+        <span>buy your needs now!</span></div>
+    </section>
+    <!--home section ends-->
+    <!--category section starts-->
+    <section class="category" id="category">
+        <h1 class="shop">categories</h1>
+        
+        <div class="boxcontainer">
+            <div class="box">
+                <h3>vegetables and fruits</h3>
+                <p>up to <span>50%</span> off</p>
+                <img src="images/fruveg.jpg" class="immg">
+            </div>
+            <div class="box">
+                <h3>milk products</h3>
+                <p>up to <span>15%</span> off</p>
+                <img src="images/milkk.jpg" class="immg">
+            </div>
+            <div class="box">
+                <h3>meats</h3>
+                <p>up to <span>25%</span> off</p>
+                <img src="images/mm.jpg" class="immg">
+            </div>
+           
+        </div>
+        
+    </section>
+    <!--category section ends-->
+    <!--products section starts-->
+    <section class="products" id="products" >
+        <h1 class="shop">latest <span>products</span></h1>
+        <div class="boxcontainer">
+            <div class="box">
+                <span class="discount">-33%</span>
+                <img src="images/apples.jpg" alt="" class="pic">
+                <h3>organic apples</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">EGP 25.00</div>
+                <div class="quantity" ><span>quantity:</span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> /kg</span>
+                    
+                 </div>
+                 <a class="add" id="add">add to cart</a> 
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                <img src="images/ba.jpg" alt="" class="pic">
+                <h3>organic banana</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">EGP 10.00</div>
+                <div class="quantity" ><span>quantity:</span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> /kg</span>
+                    
+                 </div>
+                 <a class="add" id="add1">add to cart</a> 
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                <img src="images/water.jpg" alt="" class="pic">
+                <h3>organic watermelon</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">EGP 50.00</div>
+                <div class="quantity" ><span>quantity:</span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> /kg</span>
+                    
+                 </div>
+                 <a class="add" id="add2">add to cart</a> 
+            </div>
+            <div class="box">
+                <span class="discount">-6%</span>
+                <img src="images/m.jpg" alt="" class="pic">
+                <h3>natural milk</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">EGP 20.00</div>
+                <div class="quantity" ><span>quantity:</span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> /kg</span>
+                     
+                 </div>
+                 <a class="add" id="add3">add to cart</a> 
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <img src="images/tomatoes2.jpg" alt="" class="pic">
+                <h3>organic tomatoes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">EGP 10.00</div>
+                <div class="quantity" ><span>quantity:</span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> /kg</span>
+                     
+                 </div>
+                 <a class="add" id="add4">add to cart</a> 
+            </div>
+            <div class="box">
+                <span class="discount">-30%</span>
+                <img src="images/grgrapes.jpg" alt="" class="pic">
+                <h3>organic grapes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">EGP 20.00</div>
+                <div class="quantity" ><span>quantity:</span>
+                    <input type="number" min="1" max="100" value="1">
+                    <span> /kg</span>
+                 </div>
+                 <a class="add" id="add5">add to cart</a> 
+            </div>
+        </div>
+        <a href="shop.html" class="btn">shop now</a> 
+    </section>
+    <!--products section ends-->
+    <!--footer section starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>  Grocery</a>
+                <p>thank you for choosing us</p>
+                <div class="share">
+                    <a href="#" class="bt fab fa-facebook-f"></a>
+                    <a href="#" class="bto fab fa-google"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <div class="links">
+                <a href="#home">home</a>
+                <a href="#category">category</a>
+                <a href="#products">Products</a>
+                <a href="shop.html">shop</a>
+                </div>
+            </div>
+
+        </div>
+        <h1 class="credit">created by <span>terevena |</span></div> all rights reserved!</h1>
+    </section>
+    <!--footer section ends-->
+    <script src="css/project.js"></script>
+</body>
+</html>

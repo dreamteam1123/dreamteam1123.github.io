@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="Css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="login">
+            <h2>Log In</h2>
+        </div>
+
+        <form action="" method="post" validate>
+            <div class="userdetails">
+
+
+                <div class="inputbox">
+                    <label class="details" for="user">Email</label>
+                    <input id="user" type="email" placeholder="Username" required>
+                </div>
+
+
+
+                <div class="inputbox">
+                    <label class="details" for="password">Password</label>
+                    <input id="password" type="password" placeholder="Password" required minlength="10" maxlength="20">
+                </div>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Log In">
+            </div>
+
+            <div class="option">Use Another Way</div>
+
+        </form>
+
+
+
+
+
+        <div class="facebook">
+            <a href="#"><i class="fa fa-facebook"></i>LOGIN WITH FACEBOOK</a>
+        </div>
+
+
+        <div class="google">
+            <a href="#"><i class="fa fa-google"></i>LOGIN WITH GOOGLE</a>
+        </div>
+
+
+        <div class="register">
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+</body>
+
+</html>
